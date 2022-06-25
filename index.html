@@ -5,111 +5,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="icon/bootstrap-icons.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/icon/bootstrap-icons.css">
     <title>Store</title>
 </head>
 
-<body style="background-color: #C4DDFF;">
-    <nav class="navbar navbar-dark navbar-expand-sm" style="z-index: 1000;">
+<body style="background-color: #e7d6cf;">
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top" style="z-index: 1000; background-color: #d0b3a1;">
         <div class="container">
-            <a class="navbar-brand h1 fs-1" href="index.html">Nina Store</a>
+            <a class="navbar-brand fw-semibold fs-2" href="">Nina Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mt-0">
-                    <a class="nav-link fs-3 fw-semibold" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link fs-3 fw-semibold" href="product.html">Product</a>
-                    <a class="nav-link fs-3 fw-semibold" href="about.html">About</a>
-                    <a class="nav-link fs-3 fw-semibold d-sm-none" href=""><br><br></a>
+                    <a class="nav-link fs-6 fw-semibold mt-1 active" aria-current="page" href="">Home</a>
+                    <a class="nav-link fs-6 fw-semibold mt-1" href="product">Product</a>
+                    <a class="nav-link fs-6 fw-semibold mt-1" href="about">About</a>
+                    <!-- <a class="nav-link fs-6 fw-semibold mt-1 d-sm-none" href=""><br><br></a> -->
                 </div>
             </div>
         </div>
     </nav>
-    <div>
 
-        <div id="carouselExampleInterval" class="carousel slide carousel-fade shadow-lg " data-bs-ride="carousel"
-            style=" margin-top: -82px;">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="images/img1.jpg" class="d-block w-100" alt="images/img3.jpg">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/img3.jpg" class="d-block w-100" alt="images/img1.jpg">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/img2.jpg" class="d-block w-100" alt="images/img2.jpg">
-                </div>
+
+
+
+    <!-- <div id="carouselExampleCaptions" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel"
+        style="margin-top: -82px;"> -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class=" carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/images/banner/Banner2.jpg" class="d-block w-100" alt="images/img1.jpg">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/images/banner/Banner1.jpg" class="d-block w-100" alt="images/img3.jpg">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/images/banner/Banner3.jpg" class="d-block w-100" alt="images/img2.jpg">
+            </div>
         </div>
-
-        <div class="judul" style="position: relative; margin-top: -40%; margin-left: 15%; z-index: 100; width: 25%;">
-            <div class="h1 fw-bold text-light">The Future of Cosmetics</div>
-            <div class="h6 text-light d-none d-md-block ">Menyediakan macam-macam kosmetik yang anda butuhkan, Apa yang
-                anda cari pasti ada disini.</div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="" style="margin-top: 20%"></div>
-    <div class="d-none d-sm-block d-md-none" style="margin-top: 30%"></div>
-    <div class="d-none d-md-block" style="margin-top: 30%"></div>
 
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col m-4 col-lg-4  m-sm-0">
-                <div class="card align-self-center">
-                    <img src="images/bedak.jpg" class="card-img-top" alt="images/bedak.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">Powder</h5>
-                        <p class="card-text">Penjelasan barang tersebut, atau deskripsi.</p>
-                        <span class="card-text text-decoration-line-through">Rp. 90.000
-                        </span><br>
-                        <span class="card-text text-danger">Rp. 76.000
+
+    <div class="shadow-lg"><img class="w-100" src="assets/images/additional/layanan.jpg" alt="Gambar Layanan">
+    </div>
+
+
+
+
+
+    <div class="container mt-3">
+        <div class="row d-flex justify-content-center">
+            <div class="col-11 g-4 col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="assets/images/product/1a.jpg" class="card-img-top" alt="images/bedak.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Kemeja Kotak Korean Style</h5>
+                        <p class="card-text">
+                            Kemeja lengan balon all Size
+                            <br>Bahan : Katun
+                            <br>Kondisi : Pernah Pakai</p>
+                        <span class="card-text text-decoration-line-through">Rp. 46.000
+                        </span>
+                        <span class="card-text text-danger">Rp. 35.000
                         </span>
                         <br>
-                        <a href="#" class="btn btn-primary  mt-4" target="_blank">Beli Sekarang</a>
+                        <a href="#" class="btn btn-outline-secondary mt-auto" target="_blank">Beli Sekarang</a>
                     </div>
                 </div>
             </div>
-            <div class="col m-4 col-lg-4  m-sm-0">
-                <div class="card align-self-center">
-                    <img src="images/liptint.jpg" class="card-img-top" alt="images/bedak.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">Liptint</h5>
-                        <p class="card-text">Penjelasan barang tersebut, atau deskripsi.</p>
-                        <span class="card-text text-decoration-line-through">Rp. 90.000
-                        </span><br>
-                        <span class="card-text text-danger">Rp. 76.000
+            <div class="col-11 g-4 col-md-4 d-flex align-items-stretch">
+                <div class="card align-self-stretch">
+                    <img src="assets/images/product/2a.jpg" class="card-img-top" alt="images/bedak.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rajut Tebal Demin</h5>
+                        <p class="card-text">
+                            Rajut warna demin all size
+                            <br>Bahan : Rajut
+                            <br>Kondisi : Pernah Pakai</p>
+                        <span class="card-text text-decoration-line-through">Rp. 46.000
+                        </span>
+                        <span class="card-text text-danger">Rp. 35.000
                         </span>
                         <br>
-                        <a href="#" class="btn btn-primary  mt-4" target="_blank">Beli Sekarang</a>
+                        <a href="#" class="btn btn-outline-secondary mt-auto" target="_blank">Beli Sekarang</a>
                     </div>
                 </div>
             </div>
-            <div class="col m-4  col-lg-4  m-sm-0">
-                <div class="card align-self-center">
-                    <img src="images/mascara.jpg" class="card-img-top" alt="images/bedak.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">Mascara</h5>
-                        <p class="card-text">Penjelasan barang tersebut, atau deskripsi.</p>
-                        <span class="card-text text-decoration-line-through">Rp. 90.000
-                        </span><br>
-                        <span class="card-text text-danger">Rp. 76.000
+            <div class="col-11 g-4 col-md-4 d-flex align-items-stretch">
+                <div class="card align-self-stretch">
+                    <img src="assets/images/product/3a.jpg" class="card-img-top" alt="images/bedak.jpg">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rok Size M</h5>
+                        <p class="card-text">
+                            Size M muat BB 45, b
+                            <br>Bahan : Katun
+                            <br>Kondisi : Pernah Pakai</p>
+                        <span class="card-text text-decoration-line-through">Rp. 46.000
+                        </span>
+                        <span class="card-text text-danger">Rp. 35.000
                         </span>
                         <br>
-                        <a href="#" class="btn btn-primary  mt-4" target="_blank">Beli Sekarang</a>
+                        <a href="#" class="btn btn-outline-secondary mt-auto" target="_blank">Beli Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -121,7 +138,7 @@
 
 
 
-    <footer class="text-center text-white" style="background-color: #7FB5FF;">
+    <footer class="text-center text-white" style="background-color: #d0b3a1;">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Social media -->
@@ -152,7 +169,7 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3" style="background-color: rgba(50, 0, 0, 0.2);">
             © 2022 Copyright:
             <a class="text-white" href="">NinaStore.com</a>
         </div>
@@ -178,8 +195,7 @@
 
 
 
-
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
